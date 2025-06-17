@@ -35,14 +35,6 @@
             margin-bottom: 20px;
             width: 100%;
         }
-        .quiz {
-            background-color: #15e83c;
-        }
-
-        .back-detail {
-            background-color: #f0f0f0;
-        }
-
         .animal-image {
             width: 300px;
             max-height: 300px;
@@ -58,9 +50,9 @@
             margin-bottom: 15px;
             text-align: center;
         }
-        .back-detail, .quiz {
+        .back-detail {
             border: none;
-            background-color: #ffebee;
+            background-color: #f0f0f0;
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -68,12 +60,12 @@
         }
         .quiz {
             background-color: #15e83c;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
         }
-
-        .back-detail {
-            background-color: #f0f0f0;
-        }
-        
         .animal-description {
             margin-bottom: 20px;
             text-align: justify;
@@ -159,12 +151,13 @@
         </div>
         
         <div class="audio-container">
-            <label class="audio-label">Dengarkan Suara Angsa:</label>
+            <p> dengarkan suara angsa:</p>
             <audio controls>
                 <source src="assets/angsa.mp3" type="audio/mpeg">
                 Browser Anda tidak mendukung elemen audio.
             </audio>
         </div>
+
         <button onclick="window.location.href='quiz.html'" class="quiz">QUIZ</button>
         <button onclick="window.location.href='animals.html'" class="back-detail">LIST ANIMALS</button>
     </div>
