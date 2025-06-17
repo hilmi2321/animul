@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Singa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            min-width: 240px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9e4b7;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #d35400;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .back-detail, .quiz {
+            border: none;
+            background-color: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .quiz {
+            background-color: #15e83c;
+        }
+
+        .back-detail {
+            background-color: #f0f0f0;
+        }
+
+
+        .lion-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-top: 20px;
+            display: flex; /* Enable flexbox */
+            flex-direction: column; /* Stack the items vertically */
+            align-items: center; /* Center the items horizontally */
+            justify-content: center; /* Center the items vertically */
+        }
+
+        .lion-image {
+            width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 3px solid #e67e22;
+        }
+
+        .lion-name {
+            font-size: 2em;
+            color: #e67e22;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .lion-description {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        
+        .lion-facts, .audio-container {
+            background-color: #fdebd0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%; /* Ensure both elements take the full width of their container */
+            box-sizing: border-box; /* Include padding in the element's width */
+        }
+
+        .audio-container {
+            background-color: #f0f0f0;
+        }
+
+        .lion-facts h3, .audio-label {
+            color: #d35400;
+            margin-top: 0;
+        }
+
+        .lion-facts ul {
+            padding-left: 20px;
+        }
+
+        .lion-facts li {
+            margin-bottom: 8px;
+        }
+
+        .audio-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #e67e22;
+            font-size: 1.2em;
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 600px) {
+            .lion-container {
+                padding: 15px; /* Add padding for smaller screens */
+            }
+
+            .lion-facts, .audio-container {
+                margin-bottom: 15px; /* Reduce margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lion-container">
+        <img src="assets/Singa.jpg" alt="Singa" class="lion-image">
+        <h2 class="lion-name">Singa (Panthera leo)</h2>
+        
+        <p class="lion-description">
+            Singa adalah salah satu hewan paling ikonik di dunia, sering dijuluki sebagai "Raja Hutan". 
+            Mereka adalah kucing besar kedua setelah harimau dan satu-satunya kucing yang hidup berkelompok. 
+            Singa jantan terkenal dengan surai mereka yang megah, sedangkan singa betina adalah pemburu utama dalam kelompok.
+        </p>
+        
+        <div class="lion-facts">
+            <h3>Fakta Menarik tentang Singa:</h3>
+            <ul>
+                <li>Singa dapat berlari dengan kecepatan hingga 80 km/jam dalam jarak pendek</li>
+                <li>Suara auman singa dapat terdengar hingga jarak 8 kilometer</li>
+                <li>Singa tidur hingga 20 jam sehari, menjadikannya salah satu hewan paling malas di dunia</li>
+                <li>Anak singa memiliki bintik-bintik pada bulunya yang akan menghilang saat dewasa</li>
+                <li>Singa betina biasanya berburu bersama-sama untuk menjatuhkan mangsa yang lebih besar</li>
+            </ul>
+        </div>
+        
+        <div class="audio-container">
+            <label class="audio-label">Dengarkan Auman Singa:</label>
+            <audio controls>
+                <source src="assets/Singa.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+        <button onclick="window.location.href='quiz.html'" class="quiz">QUIZ</button>
+        <button onclick="window.location.href='animals.html'" class="back-detail">LIST ANIMALS</button>
+    </div>
+    
+    <footer>
+        <p>&copy; Belajar Hewan Pemula</p>
+    </footer>
+</body>
+</html>

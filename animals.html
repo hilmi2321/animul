@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Hewan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('assets/WallpaperQuiz.png');
+            background-size: cover; /* Gambar akan menutupi seluruh area */
+            background-position: center; /* Gambar akan diposisikan di tengah */
+            background-attachment: fixed; /* Gambar tetap saat scrolling */
+            background-repeat: no-repeat; /* Gambar tidak diulang */
+            min-height: 100vh; /* Minimal tinggi body sama dengan tinggi viewport */
+        }
+        h1 {
+            text-align: center;
+            color: #040404;
+            background-color: rgba(246, 246, 246, 0.9); /* sedikit transparan */
+            padding: 15px;
+            border-radius: 24px;
+            max-width: 768px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sedikit bayangan */
+            font-size: 1.8em; /* ukuran font lebih besar */
+            text-transform: uppercase; /* huruf kapital semua */
+            letter-spacing: 1px; /* jarak antar huruf */
+        }
+        .button-bawah {
+            display: block; /* Membuat tombol menjadi blok */
+            margin: 30px auto; /* Menempatkan tombol di tengah secara horizontal */
+            text-align: center;
+            color: #040404;
+            background-color: rgba(246, 246, 246, 0.9); /* sedikit transparan */
+            padding: 12px;
+            font-size: 12px;
+            border-radius: 24px;
+            border: none;
+            width: 240px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sedikit bayangan */
+            text-transform: uppercase; /* huruf kapital semua */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>List Hewan</h1>
+    
+    <div class="container">
+        <!-- Card Ayam -->
+        <div class="card">
+            <img src="assets/ayam.jpeg" alt="Ayam">
+            <h3>Ayam</h3>
+            <button onclick="window.location.href='ayam.html'">Detail</button>
+        </div>
+        
+        <!-- Card Angsa -->
+        <div class="card">
+            <img src="assets/angsa.jpeg" alt="Angsa">
+            <h3>Angsa</h3>
+            <button onclick="window.location.href='angsa.html'">Detail</button>
+        </div>
+        
+        <!-- Card Domba -->
+        <div class="card">
+            <img src="assets/domba.jpeg" alt="Domba">
+            <h3>Domba</h3>
+            <button onclick="window.location.href='domba.html'">Detail</button>
+        </div>
+        
+        <!-- Card Gajah -->
+        <div class="card">
+            <img src="assets/gajah.jpg" alt="Gajah">
+            <h3>Gajah</h3>
+            <button onclick="window.location.href='gajah.html'">Detail</button>
+        </div>
+        
+        <!-- Card Singa -->
+        <div class="card">
+            <img src="assets/singa.jpg" alt="Singa">
+            <h3>Singa</h3>
+            <button onclick="window.location.href='singa.html'">Detail</button>
+        </div>
+        
+        <!-- Card Kuda -->
+        <div class="card">
+            <img src="assets/kuda.jpg" alt="Kuda">
+            <h3>Kuda</h3>
+            <button onclick="window.location.href='kuda.html'">Detail</button>
+        </div>
+    </div>
+    <button onclick="window.location.href='index.html'" class="button-bawah">Halaman Start</button>
+    <button onclick="window.location.href='quiz.html'" class="button-bawah">QUIZ</button>
+</body>
+</html>

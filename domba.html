@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Domba</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            min-width: 240px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e8f5e9;
+            color: #333;
+        }
+        
+        .animal-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-detail, .quiz {
+            border: none;
+            background-color: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .quiz {
+            background-color: #15e83c;
+        }
+
+        .back-detail {
+            background-color: #f0f0f0;
+        }
+
+        .animal-image {
+            width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 3px solid #43a047;
+        }
+
+        .animal-name {
+            font-size: 2em;
+            color: #43a047;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .animal-description {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        
+        .animal-facts, .audio-container {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .audio-container {
+            background-color: #f0f0f0;
+        }
+
+        .animal-facts h3, .audio-label {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .animal-facts ul {
+            padding-left: 20px;
+        }
+
+        .animal-facts li {
+            margin-bottom: 8px;
+        }
+
+        .audio-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #43a047;
+            font-size: 1.2em;
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 600px) {
+            .animal-container {
+                padding: 15px;
+            }
+
+            .animal-facts, .audio-container {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animal-container">
+        <img src="assets/domba.jpeg" alt="Domba" class="animal-image">
+        <h2 class="animal-name">Domba (Ovis aries)</h2>
+        
+        <p class="animal-description">
+            Domba adalah hewan ruminansia yang telah didomestikasi dan dipelihara manusia sejak zaman dahulu. 
+            Mereka terutama dipelihara untuk diambil bulunya (wol), daging, dan susunya. 
+            Domba dikenal sebagai hewan yang jinak dan hidup berkelompok, sering menjadi simbol kedamaian dan kepatuhan.
+        </p>
+        
+        <div class="animal-facts">
+            <h3>Fakta Menarik tentang Domba:</h3>
+            <ul>
+                <li>Domba memiliki bidang pandang visual 270-320 derajat, memungkinkan mereka melihat di belakang tanpa menoleh</li>
+                <li>Mereka memiliki ingatan yang sangat baik dan dapat mengingat wajah manusia selama bertahun-tahun</li>
+                <li>Domba dapat mengenakan ekspresi wajah yang berbeda untuk mengkomunikasikan emosi mereka</li>
+                <li>Wol domba terus tumbuh dan harus dicukur setidaknya setahun sekali</li>
+                <li>Domba memiliki empat perut seperti sapi untuk membantu mencerna makanan mereka</li>
+            </ul>
+        </div>
+        
+        <div class="audio-container">
+            <label class="audio-label">Dengarkan Suara Domba:</label>
+            <audio controls>
+                <source src="assets/domba.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+        <button onclick="window.location.href='quiz.html'" class="quiz">QUIZ</button>
+        <button onclick="window.location.href='animals.html'" class="back-detail">LIST ANIMALS</button>
+    </div>
+    
+    <footer>
+        <p>&copy; Belajar Hewan Pemula</p>
+    </footer>
+</body>
+</html>

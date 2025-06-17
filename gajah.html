@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Gajah</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            min-width: 240px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .animal-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-detail, .quiz {
+            border: none;
+            background-color: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .quiz {
+            background-color: #15e83c;
+        }
+
+        .back-detail {
+            background-color: #f0f0f0;
+        }
+
+        .animal-image {
+            width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 3px solid #6d4c41;
+        }
+
+        .animal-name {
+            font-size: 2em;
+            color: #6d4c41;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .animal-description {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        
+        .animal-facts, .audio-container {
+            background-color: #efebe9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .audio-container {
+            background-color: #f0f0f0;
+        }
+
+        .animal-facts h3, .audio-label {
+            color: #5d4037;
+            margin-top: 0;
+        }
+
+        .animal-facts ul {
+            padding-left: 20px;
+        }
+
+        .animal-facts li {
+            margin-bottom: 8px;
+        }
+
+        .audio-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #6d4c41;
+            font-size: 1.2em;
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 600px) {
+            .animal-container {
+                padding: 15px;
+            }
+
+            .animal-facts, .audio-container {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animal-container">
+        <img src="assets/gajah.jpg" alt="Gajah" class="animal-image">
+        <h2 class="animal-name">Gajah (Elephantidae)</h2>
+        
+        <p class="animal-description">
+            Gajah adalah mamalia darat terbesar di dunia dan dikenal dengan belalainya yang panjang, 
+            taring gading, dan telinga yang besar. Mereka adalah hewan yang sangat cerdas dengan 
+            struktur sosial yang kompleks dan ingatan yang luar biasa. Gajah memainkan peran penting 
+            dalam ekosistem mereka dan dianggap sebagai spesies kunci.
+        </p>
+        
+        <div class="animal-facts">
+            <h3>Fakta Menarik tentang Gajah:</h3>
+            <ul>
+                <li>Gajah dapat mengenali diri mereka sendiri di cermin, kemampuan yang sangat langka di dunia hewan</li>
+                <li>Mereka berkomunikasi menggunakan suara infrasonik yang dapat merambat hingga 10 kilometer</li>
+                <li>Gajah memiliki masa kehamilan terpanjang di antara mamalia darat - hampir 22 bulan</li>
+                <li>Belalai gajah memiliki lebih dari 40.000 otot dan dapat mengangkat beban hingga 270 kg</li>
+                <li>Gajah menunjukkan perilaku seperti berkabung ketika anggota kelompoknya meninggal</li>
+            </ul>
+        </div>
+        
+        <div class="audio-container">
+            <label class="audio-label">Dengarkan Suara Gajah:</label>
+            <audio controls>
+                <source src="assets/gajah.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+        <button onclick="window.location.href='quiz.html'" class="quiz">QUIZ</button>
+        <button onclick="window.location.href='animals.html'" class="back-detail">LIST ANIMALS</button>
+    </div>
+    
+    <footer>
+        <p>&copy; Belajar Hewan Pemula</p>
+    </footer>
+</body>
+</html>

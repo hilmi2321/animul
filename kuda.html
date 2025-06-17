@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kuda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            min-width: 240px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #7ebbef;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2980b9;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .back-detail, .quiz {
+            border: none;
+            background-color: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .quiz {
+            background-color: #15e83c;
+        }
+
+        .back-detail {
+            background-color: #f0f0f0;
+        }
+
+        .horse-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .horse-image {
+            width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 3px solid #3498db;
+        }
+
+        .horse-name {
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .horse-description {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .horse-facts, .audio-container {
+            background-color: #eaf2f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .audio-container {
+            background-color: #f0f0f0;
+        }
+
+        .horse-facts h3, .audio-label {
+            color: #2980b9;
+            margin-top: 0;
+        }
+
+        .horse-facts ul {
+            padding-left: 20px;
+        }
+
+        .horse-facts li {
+            margin-bottom: 8px;
+        }
+
+        .audio-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #3498db;
+            font-size: 1.2em;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #1286f1;
+        }
+
+        @media (max-width: 600px) {
+            .horse-container {
+                padding: 15px;
+            }
+
+            .horse-facts, .audio-container {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="horse-container">
+        <img src="assets/Kuda.jpg" alt="Kuda" class="horse-image">
+        <h2 class="horse-name">Kuda (Equus ferus caballus)</h2>
+
+        <p class="horse-description">
+            Kuda adalah salah satu hewan ternak yang paling terkenal di dunia. Mereka telah dijinakkan oleh manusia selama ribuan tahun dan digunakan dalam berbagai bidang, mulai dari transportasi, olahraga, hingga pertanian. Kuda dikenal dengan kecepatan dan ketahanannya, serta menjadi simbol kekuatan dan kebebasan.
+        </p>
+
+        <div class="horse-facts">
+            <h3>Fakta Menarik tentang Kuda:</h3>
+            <ul>
+                <li>Kuda dapat berlari dengan kecepatan hingga 70 km/jam dalam jarak pendek</li>
+                <li>Kuda tidur dengan mata terbuka dan dapat beristirahat sambil berdiri</li>
+                <li>Dalam dunia olahraga, kuda digunakan dalam balap kuda dan polo</li>
+                <li>Kuda dapat mendengar frekuensi suara yang lebih tinggi daripada manusia</li>
+                <li>Kuda memiliki penglihatan 360 derajat dan mampu melihat di sekitar mereka dengan sangat jelas</li>
+            </ul>
+        </div>
+
+        <div class="audio-container">
+            <label class="audio-label">Dengarkan Suara Kuda:</label>
+            <audio controls>
+                <source src="assets/Kuda.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+        <button onclick="window.location.href='quiz.html'" class="quiz">QUIZ</button>
+        <button onclick="window.location.href='animals.html'" class="back-detail">LIST ANIMALS</button>
+    </div>
+
+    <footer>
+        <p>&copy; Belajar Hewan Pemula</p>
+    </footer>
+</body>
+</html>
